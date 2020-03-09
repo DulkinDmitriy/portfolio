@@ -1,0 +1,53 @@
+@import "mixins.scss";
+
+.mail-b-bl {
+    @include span-hover('contact', 'black', 'blue');
+}
+
+.vk-b-bl {
+    @include span-hover('vk', 'black', 'blue');
+}
+
+.vk-b-p {
+    @include span-hover('vk', 'black', 'pink');
+}
+
+.tg-b-bl {
+    @include span-hover('telegram', 'black', 'blue');
+}
+
+.git-p-bl {
+    @include span-hover('github', 'pink', 'blue');
+}
+
+.vk-p-bl {
+    @include span-hover('vk', 'pink', 'blue');
+}
+
+.tg-p-bl {
+    @include span-hover('telegram', 'pink', 'blue');
+}
+
+.toggler {
+    @include span-hover('menu', 'pink', 'blue');
+}
+
+.monitor {
+    @include span-hover('monitor', 'blue', 'pink');
+}
+
+.server {
+    @include span-hover('server', 'blue', 'pink');
+}
+
+.inbox {
+    @include span-hover('inbox', 'blue', 'pink');
+}
+
+.project1 {
+    @include project-image('../img/2bro.png');
+}
+
+.project2 {
+    @include project-image('../img/project-2.png');
+}

@@ -1,0 +1,31 @@
+@mixin span-hover($prefix, $main, $semi) {
+    @include span-icon("../img/#{$prefix}-#{$main}.svg", "../img/#{$prefix}-#{$semi}.svg");
+}
+
+@mixin span-icon($url, $hover){
+    transition-duration: .1s;
+    background: url($url) no-repeat 0 0;
+    background-size: contain;
+    background-position: center;
+
+    &:hover {
+        transition-duration: .1s;
+        background-image: url($hover);
+    }
+}
+
+@mixin project-image($url){
+    transition-duration: .2s;
+    background: url($url) no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    &:hover {
+        transition-duration: .2s;
+        overflow: hidden;
+        transform: scale(1.1);
+    }
+}
