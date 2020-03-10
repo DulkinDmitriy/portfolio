@@ -429,13 +429,13 @@ function ratingData($driver, $sectionNumber)
                     </p>
                     <form method="POST" action="send.php">
                         <div class="form-group">
-                            <input class="form-control" type="text" name="name" placeholder="Ваше имя">
-                            <input class="form-control" type="text" name="email" placeholder="Электронная почта">
+                            <input class="form-control" type="text" name="name" placeholder="Ваше имя" required>
+                            <input class="form-control" type="email" name="email" placeholder="Электронная почта" required>
                         </div>
                         <div class="form-group">
-                            <input class="form-control" type="text" name="theme" placeholder="Тема сообщения">
+                            <input class="form-control" type="text" name="theme" placeholder="Тема сообщения" required>
                         </div>
-                        <textarea class="form-control" name="message" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                        <textarea class="form-control" name="message" cols="30" rows="10" placeholder="Сообщение" required></textarea>
                         <div class="g-recaptcha" data-sitekey="6LePSuAUAAAAAHY-sa1lXwiQMyDGMAFjdbzzhHsN"></div>
                         <br/>
                         <input class="btn" type="submit" value="Отправить">
