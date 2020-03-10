@@ -436,6 +436,8 @@ function ratingData($driver, $sectionNumber)
                             <input class="form-control" type="text" name="theme" placeholder="Тема сообщения">
                         </div>
                         <textarea class="form-control" name="message" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                        <div class="g-recaptcha" data-sitekey="6LePSuAUAAAAAHY-sa1lXwiQMyDGMAFjdbzzhHsN"></div>
+                        <br/>
                         <input class="btn" type="submit" value="Отправить">
                     </form>
                 </div>
