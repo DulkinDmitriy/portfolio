@@ -366,12 +366,14 @@ section.resume {
 
             .links {
                 display: flex;
-                justify-content: space-between;
-                width: 25%;
-
+            
                 a {
                     display: inline-flex;
                     text-decoration: none;
+                    
+                    &:not(:last-child) {
+                        margin-right: 1rem;
+                    }
                 }
             }
         }
