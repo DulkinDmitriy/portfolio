@@ -4,23 +4,31 @@ $driver = new DbDriver('prod');
 
 function sections($driver)
 {
-    $sql = "SELECT s.number, s.section, s.section_index, SUM(d.hours) as hs FROM section as s 
-                    JOIN discipline as d ON s.id = d.section_id
-                    GROUP BY s.section, s.number, s.section_index
-                    ORDER BY s.number ASC";
-
-    return $driver->execute($sql);
+    try {
+        $sql = "SELECT s.number, s.section, s.section_index, SUM(d.hours) as hs FROM section as s 
+                        JOIN discipline as d ON s.id = d.section_id
+                        GROUP BY s.section, s.number, s.section_index
+                        ORDER BY s.number ASC";
+    
+        return $driver->execute($sql);
+    } catch (\Throwable $th) {
+        echo $th;
+    }
 }
 
 function ratingData($driver, $sectionNumber)
 {
-    $sql = "SELECT * FROM discipline as d 
-            JOIN index as i ON d.index_id = i.id 
-            JOIN rating as r ON d.rating_id = r.id
-            JOIN section as s ON d.section_id = s.id WHERE d.section_id = $sectionNumber
-            ORDER BY i.index, d.index_number ASC";
-
-    return $driver->execute($sql);
+    try {
+        $sql = "SELECT * FROM discipline as d 
+                JOIN index as i ON d.index_id = i.id 
+                JOIN rating as r ON d.rating_id = r.id
+                JOIN section as s ON d.section_id = s.id WHERE d.section_id = $sectionNumber
+                ORDER BY i.index, d.index_number ASC";
+    
+        return $driver->execute($sql);
+    } catch (\Throwable $th) {
+        echo $th;
+    }
 }
 ?>
 
