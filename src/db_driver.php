@@ -17,7 +17,6 @@
         }
 
         function execute($sql) {
-            var_dump($this->dbconn);
             if ($this->env == 'dev') {
                 $dsn = "$this->driver:host=$this->host;port=$this->port;dbname=$this->db_name;";
                 $pdo = new PDO($dsn, $this->db_user, $this->db_password, $this->options);
