@@ -1,6 +1,6 @@
 <?php
 require_once('db_driver.php');
-$driver = new DbDriver();
+$driver = new DbDriver('prod');
 
 function sections($driver)
 {
