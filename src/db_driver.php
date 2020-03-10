@@ -23,7 +23,8 @@
                 $pdo = new PDO($dsn, $this->db_user, $this->db_password, $this->options);
             }
             else if ($this->env == 'prod') {
-                $dsn = "$this->driver:host={$this->dbconn['host']};port={$this->dbconn['port']};dbname={ltrim($this->dbconn['path'],'/')};";
+                $path = ltrim($this->dbconn['path'],'/');
+                $dsn = "$this->driver:host={$this->dbconn['host']};port={$this->dbconn['port']};dbname={$path};";
                 $pdo = new PDO($dsn, $this->dbconn['user'], $this->dbconn['pass'], $this->options);
             }
             else {
