@@ -7,7 +7,7 @@ const settings = {
     offset: '0px',
     container: {
         maxWidth: '1024px',
-        fields: '103px',
+        fields: '24px',
     },
     breakPoints: {
         md: {

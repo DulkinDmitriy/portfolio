@@ -239,7 +239,7 @@ function ratingData($driver, $sectionNumber)
                             <span id="show-1" class="show" onclick="showMore('show-1', 'more-1', 'slide-1')">
                                 Показать еще
                             </span>
-                            <span id="more-1" class="more hide-sm">
+                            <span id="more-1" class="more hide">
                                 <li>
                                     <span class="title">ПК 1.4.</span> Выполнять отладку программных модулей с использованием специализированных
                                     программных средств.
@@ -301,7 +301,7 @@ function ratingData($driver, $sectionNumber)
                                 <span class="title">ПК 3.3.</span> Осуществлять разработку тестовых наборов и тестовых сценариев.
                             </li>
                             <span id="show-2" class="show" onclick="showMore('show-2', 'more-2', 'slide-2')">Показать еще</span>
-                            <span id="more-2" class="more hide-sm">
+                            <span id="more-2" class="more hide">
                                 <li>
                                     <span class="title">ПК 3.4.</span> Выполнять отладку программного продукта с использованием специализированных
                                     программных средств.
@@ -352,8 +352,8 @@ function ratingData($driver, $sectionNumber)
                             <td><?php echo $row['hours'] ?></td>
                             <td class="hide-sm"><?php echo $row['course'] ?></td>
                             <td class="hide-sm"><?php echo $row['part'] ?></td>
-                            <td class="hide-sm"><?php echo $row['full_name'] ?></td>
-                            <td class="only-sm"><?php echo $row['short_name'] ?></td>
+                            <td class="hide-md"><?php echo $row['full_name'] ?></td>
+                            <td class="only-md"><?php echo $row['short_name'] ?></td>
                         </tr>
                     <?php endforeach; ?>
                 <?php endforeach; ?>
@@ -419,7 +419,7 @@ function ratingData($driver, $sectionNumber)
                         или вы решили сотрудничать со мной, то можете
                         воспользоваться формой обратной связи или через соц-сети.
                     </p>
-                    <form action="send.php">
+                    <form method="POST" action="send.php">
                         <div class="form-group">
                             <input class="form-control" type="text" name="name" placeholder="Ваше имя">
                             <input class="form-control" type="text" name="email" placeholder="Электронная почта">

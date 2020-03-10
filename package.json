@@ -7,8 +7,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "browser": "browser-sync start --server --files \"css/*.css, *.html img/*, js/*.js\"",
         "start": "npm run build && npm run watch",
-        "dev": "gulp watch",
-        "build": "gulp build"
+        "dev": "gulp watch"
     },
     "author": "",
     "license": "ISC",
