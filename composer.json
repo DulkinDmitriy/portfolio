@@ -1,8 +1,5 @@
 {
     "require" : {
-        "apache": "2.4.41",
-        "nginx": "1.16.1",
-        "php": "7.4.3"
     },
     "require-dev": {
       "heroku/heroku-buildpack-php": "*"
