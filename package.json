@@ -6,12 +6,16 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "browser": "browser-sync start --server --files \"css/*.css, *.html img/*, js/*.js\"",
-        "dev": "gulp watch"
+        "dev": "gulp watch",
+        "start": "node app.js"
     },
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "browser-sync": "^2.18.12",
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.26.7",
         "gulp": "^4.0.2",
         "gulp-autoprefixer": "^4.0.0",
         "gulp-clean-css": "^3.4.0",
@@ -21,18 +25,6 @@
         "gulp-rename": "^2.0.0",
         "gulp-sass": "^4.0.2",
         "gulp-sourcemaps": "^2.6.0",
-        "sass-loader": "^8.0.0"
-    },
-    "devDependencies": {
-        "browser-sync": "^2.26.7",
-        "browser-sync-webpack-plugin": "^2.2.2",
-        "clean-css-loader": "^2.0.0",
-        "css-loader": "^3.2.0",
-        "postcss-loader": "^3.0.0",
-        "smart-grid": "^2.1.2",
-        "source-map-loader": "^0.2.4",
-        "style-loader": "^1.0.0",
-        "webpack": "^4.41.2",
-        "webpack-cli": "^3.3.9"
+        "smart-grid": "^2.1.2"
     }
 }
