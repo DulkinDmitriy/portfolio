@@ -3,7 +3,7 @@ const path = require('path')
 const PORT = process.env.PORT || 5000
 
 var phpExpress = require('php-express') ({
-    binPath: '.heroku/php/bin/php'
+    binPath: 'php'
 });
 
 express()
