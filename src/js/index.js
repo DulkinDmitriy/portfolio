@@ -43,11 +43,11 @@ function showSlide(currentSlide, classKey, target) {
     let more = current.getElementsByClassName('more');
     let body = current.getElementsByClassName('slide-body');
     if(more.length > 0 
-        && !more[0].classList.contains('hide-sm') 
+        && !more[0].classList.contains('hide') 
         && body[0].classList.contains('expand')) {
-       more[0].classList.add('hide-sm');
+       more[0].classList.add('hide');
        body[0].classList.remove('expand');
-       current.getElementsByClassName('show')[0].classList.remove('hide-sm');
+       current.getElementsByClassName('show')[0].classList.remove('hide');
     }
 
     current.classList.remove('fade');
@@ -72,8 +72,8 @@ function showMore(buttonId, contentId, containerId) {
     let content = document.getElementById(contentId);
     let container = document.getElementById(containerId);
 
-    btn.classList.add('hide-sm');
-    content.classList.remove('hide-sm');
+    btn.classList.add('hide');
+    content.classList.remove('hide');
     container.classList.add('expand');
 }
 

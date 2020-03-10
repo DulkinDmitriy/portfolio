@@ -179,6 +179,10 @@ hr {
     display: none;
 }
 
+.expand {
+    height: auto !important;
+}
+
 .dots {
     display: flex;
     align-self: center;
@@ -320,6 +324,7 @@ section.home {
     .content {
         padding-top: 2rem;
         align-self: center;
+        flex-grow: .8;
 
         header {
             margin-bottom: 0;
@@ -392,7 +397,7 @@ section.technologies {
     flex-direction: column;
 
     .slider {
-        $arrow-offset: 7%;
+        $arrow-offset: 9%;
 
         .slide {
             display: flex;
@@ -470,6 +475,8 @@ section.education {
     flex-direction: column;
 
     .slider {
+        $arrow-offset: 3%;
+
         .slide {
             width: 80%;
 
@@ -484,7 +491,7 @@ section.education {
                 h2 {
                     width: 85%;
                     font-weight: bold;
-                    font-size: 1.3rem;
+                    text-align: center;
                 }
 
                 &:hover {
@@ -493,28 +500,49 @@ section.education {
             }
 
             .slide-body {
-                height: 20rem;
+                height: 17rem;
                 border-radius: 4px;
                 background-color: #fff;
                 padding: 1rem;
 
+                h3 {
+                    font-size: 1.2rem;
+                    text-align: center;
+                }
+
                 ul {
-                    padding: 1rem 1.4rem;
+                    display: flex;
+                    flex-direction: column;
+                    height: 95%;
+                    padding: .5rem .5rem 0 .5rem;
+
+                    span.show {
+                        display: block;
+                        cursor: pointer;
+                        align-self: center;
+                        margin-top: auto;
+                        padding: .4rem;
+                        color: $main-color;
+                        font-size: 1.2rem;
+                    }
 
                     li {
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+
+                        span.title {
+                            color: $semi-color;
+                            font-weight: bold;
+                            letter-spacing: 1px;
+                        }
+
                         &::before {
-                            content: '';
-                            display: inline-block;
-                            background: url(../img/arrow.svg) no-repeat 0 0;
-                            width: 1.1rem;
-                            height: .9rem;
-                            background-size: contain;
-                            background-position: center;
-                            margin-right: .4rem;
+                            display: none;
                         }
 
                         &:not(:last-child) {
-                            margin-bottom: .8rem;
+                            margin-bottom: .3rem;
                         }
                     }
                 }
@@ -535,11 +563,11 @@ section.education {
         }
 
         .prev {
-            left: 0;
+            left: $arrow-offset;
         }
 
         .next {
-            right: 0;
+            right: $arrow-offset;
         }
     }
 
@@ -662,16 +690,20 @@ section.contacts {
         justify-content: space-between;
 
         .content {
-            flex-basis: 60%;
+            flex-grow: 1;
+            max-width: 60%;
+            flex-basis: 350px;
+            margin-bottom: 1rem;
 
             p {
                 margin-bottom: 1rem;
+                text-align: justify;
             }
 
             form {
                 display: flex;
                 flex-direction: column;
-                width: 80%;
+                width: 100%;
 
                 .form-group {
                     padding-bottom: .4rem;
@@ -707,6 +739,7 @@ section.contacts {
         }
 
         .social {
+            padding: 0 1rem 0 1rem;
             display: flex;
             flex-direction: column;
 
@@ -906,10 +939,16 @@ footer {
             .slide {
                 display: flex;
                 align-items: center;
-                width: 85%;
+                width: 80%;
                 padding: .5rem;
 
+                .slide-image {
+                    flex-basis: 85px;
+                }
+
                 .slide-body {
+                    flex-basis: 100px;
+
                     header {
                         h2 {
                             font-size: 1.5rem;
@@ -945,8 +984,6 @@ footer {
     }
 
     section.education {
-
-        // SPAN READ MORE AND TABLE
         .slider {
             .slide {
                 width: 85%;
@@ -956,30 +993,13 @@ footer {
 
                     h2 {
                         font-size: .9rem;
-                        text-align: center;
                     }
-                }
-
-                .expand {
-                    height: auto !important;
                 }
 
                 .slide-body {
                     padding: .5rem;
-                    font-size: .8rem;
-                    height: 12rem;
-
-                    ul {
-                        span.show {
-                            display: block;
-                            cursor: pointer;
-                            align-self: center;
-                            margin-top: auto;
-                            padding: .4rem;
-                            color: $main-color;
-                            font-size: 1rem;
-                        }
-                    }
+                    font-size: .9rem;
+                    height: 15rem;
                 }
             }
         }
@@ -1026,6 +1046,7 @@ footer {
             align-items: center;
 
             .project {
+                flex-basis: initial;
                 width: 85%;
 
                 &:nth-child(odd) {
@@ -1053,6 +1074,8 @@ footer {
             flex-direction: column;
 
             .content {
+                max-width: initial;
+                flex-basis: initial;
                 margin-bottom: 1rem;
 
                 p {
@@ -1117,6 +1140,27 @@ footer {
     .icon {
         height: 2rem;
         width: 2rem;
+    }
+
+    .hide-md {
+        display: none;
+    }
+    
+    .slider {
+        $arrow-offset: 2%;
+
+        .prev,
+        .next {
+            font-size: 3.5rem;
+        }
+
+        .prev {
+            padding-right: $arrow-offset;
+        }
+
+        .next {
+            padding-left: $arrow-offset;
+        }
     }
 
     header.header {
@@ -1215,56 +1259,81 @@ footer {
     }
 
     section.education {
+        $arrow-offset: 3%;
+
         .slider {
             .slide {
-                header {
-                    h2 {
-                        font-size: 1rem;
-                    }
-                }
 
                 .slide-body {
-                    height: auto;
-
                     ul {
-                        display: flex;
-                        flex-direction: column;
-                        height: 100%;
-                        padding: .5rem;
-
                         li {
-                            display: flex;
-                            flex-direction: column;
-                            text-align: center;
-
-                            span.title {
-                                color: $semi-color;
-                                font-weight: bold;
-                                letter-spacing: 1px;
-                            }
-
-                            &::before {
-                                display: none;
-                            }
-
-                            &:not(:last-child) {
-                                margin-bottom: .3rem;
-                            }
+                            font-size: 1rem;
                         }
                     }
+                }
+            }
+
+            .prev {
+                left: $arrow-offset;
+            }
+
+            .next {
+                right: $arrow-offset;
+            }
+        }
+
+        .dots {
+            margin-bottom: 0;
+        }
+
+        table {
+            tr {
+                th, td {
+                    padding: .2rem;
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+
+    section.projects {
+        .content {
+            justify-content: space-evenly;
+
+            .project {
+                flex-basis: 280px;
+                margin: 1rem;
+                flex-grow: 1;
+                max-width: 65%;
+            }
+        }
+    }
+
+    section.contacts {
+        section {
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            .content {
+                max-width: 80%;
+
+                p {
+                    text-align: justify;
                 }
 
             }
         }
     }
-
-    table {
-        display: none;
-    }
 }
 
 @media screen and (min-width: 427px) {
     .only-sm {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .only-md {
         display: none;
     }
 }
