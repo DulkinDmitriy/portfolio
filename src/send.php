@@ -24,7 +24,7 @@ try {
     $mail->setFrom($_POST['email']);
     $mail->addAddress('dulckin.dim@yandex.ru');
     $mail->Subject = $_POST['theme'] . '. Пользователь: ' . $_POST['name'];
-    $mail->Body = $_POST['message'] . "\nДанное сообщение было отправленно с dulyanich.herokuapp.com";
+    $mail->Body = $_POST['message'] . "Email пользователя: " . $_POST['email'] . "\nДанное сообщение было отправленно с dulyanich.herokuapp.com";
 
     $mail->send();
     
