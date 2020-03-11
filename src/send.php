@@ -27,13 +27,13 @@ try {
     $mail->Body = $_POST['message'] . "\nДанное сообщение было отправленно с dulyanich.herokuapp.com";
 
     $mail->send();
-
-    $url = $_SERVER['HTTP_HOST'] . rtrim(dirname($_SERVER['PHP_SELF']), '/\\') . '/index.php';
+    // redirect
+    // $url = $_SERVER['HTTP_HOST'] . rtrim(dirname($_SERVER['PHP_SELF']), '/\\') . '/index.php';
 
     if (headers_sent()) {
-        echo ("<script>location.href='$url'</script>");
+        echo ("<script>location.href='index.php'</script>");
     } else {
-        header("Location: $url");
+        header("Location: index.php");
     }
 } catch (Throwable $tr) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
