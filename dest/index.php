@@ -205,13 +205,13 @@ function ratingData($driver, $sectionNumber)
                         </p>
                     </div>
                 </div>
-                <a class="prev" onclick="prevTechSlide()">&#10094;</a>
-                <a class="next" onclick="nextTechSlide()">&#10095;</a>
+                <a class="prev" onclick="techSlider.prevSlide()">&#10094;</a>
+                <a class="next" onclick="techSlider.nextSlide()">&#10095;</a>
             </div>
-            <div class="dots">
-                <span class="dot tech active" onclick="showTechSlide(0)"></span>
-                <span class="dot tech" onclick="showTechSlide(1)"></span>
-                <span class="dot tech" onclick="showTechSlide(2)"></span>
+            <div class="dots tech">
+                <span class="dot active" onclick="techSlider.showSlide(0)"></span>
+                <span class="dot" onclick="techSlider.showSlide(1)"></span>
+                <span class="dot" onclick="techSlider.showSlide(2)"></span>
             </div>
         </section>
         <hr>
@@ -326,13 +326,13 @@ function ratingData($driver, $sectionNumber)
                         </ul>
                     </div>
                 </div>
-                <a class="prev" onclick="prevEduSlide()">&#10094;</a>
-                <a class="next" onclick="nextEduSlide()">&#10095;</a>
+                <a class="prev" onclick="eduSlider.prevSlide()">&#10094;</a>
+                <a class="next" onclick="eduSlider.nextSlide()">&#10095;</a>
             </div>
-            <div class="dots">
-                <span class="dot edu active" onclick="showEduSlide(0)"></span>
-                <span class="dot edu" onclick="showEduSlide(1)"></span>
-                <span class="dot edu" onclick="showEduSlide(2)"></span>
+            <div class="dots edu">
+                <span class="dot active" onclick="eduSlider.showSlide(0)"></span>
+                <span class="dot" onclick="eduSlider.showSlide(1)"></span>
+                <span class="dot" onclick="eduSlider.showSlide(2)"></span>
             </div>
             <table>
                 <caption>Таблица успеваемости</caption>
@@ -473,6 +473,6 @@ function ratingData($driver, $sectionNumber)
         </div>
     </footer>
 </body>
-<script src="js/index.js"></script>
+<script src="ts/index.js"></script>
 
 </html>

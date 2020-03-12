@@ -76,11 +76,3 @@ function showMore(buttonId, contentId, containerId) {
     content.classList.remove('hide');
     container.classList.add('expand');
 }
-
-function expandNavToggle(btnId) {
-    let btn = document.getElementById(btnId);
-    let nav = document.getElementsByTagName('nav');
-
-    btn.classList.add('hide-sm');
-    nav[0].classList.remove('hide-sm');
-}
