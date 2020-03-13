@@ -50,6 +50,27 @@ class AnimatedSlide implements Slide {
     }
 }
 
+class CollapsedSlide implements Slide {
+    private readonly elem: Slide;
+    private readonly showMoreButton: ShowMore;
+
+    constructor(element: Slide, showMoreButton: ShowMore) {
+        this.elem = element;
+        this.showMoreButton = showMoreButton;
+    }
+
+    element() {
+        return this.elem.element();
+    }
+    show(): void {
+        this.elem.show();
+    }
+    hide(): void {
+        this.showMoreButton.hideContent();
+        this.elem.hide();
+    }
+}
+
 interface SlideshowPanel {
     showSlide(target: number): void;
     nextSlide(): void;
@@ -81,12 +102,13 @@ class SlideshowPanelBase implements SlideshowPanel {
         this.slides[this.current].hide();
         this.dots[this.current].deactivate();
 
+        let start = Date.now();
         setTimeout(() => {
             this.slides[target].show();
             this.dots[target].activate();
 
             this.current = target;
-        }, 301);
+        }, 300);
     }
 
     nextSlide() {
@@ -114,6 +136,33 @@ class Dot {
     }
 }
 
+class ShowMore {
+    private readonly container: any;
+    private readonly content: any;
+    private readonly button: any;
+
+    constructor(container: any, content: any, button: any) {
+        this.container = container;
+        this.content = content;
+        this.button = button;
+        this.button.onclick = () => {
+            this.showContent()
+        };
+    }
+
+    showContent() {
+        this.button.classList.add('hide');
+        this.container.classList.add('expand');
+        this.content.classList.remove('hide');
+    }
+
+    hideContent() {
+        this.content.classList.add('hide');
+        this.container.classList.remove('expand');
+        this.button.classList.remove('hide');
+    }
+}
+
 let docTechSlides = document.getElementsByClassName('slider tech')[0].getElementsByClassName('slide');
 let docTechDots = document.getElementsByClassName('dots tech')[0].getElementsByClassName('dot');
 let docEduSlides = document.getElementsByClassName('slider edu')[0].getElementsByClassName('slide');
@@ -130,7 +179,23 @@ for (let index = 0; index < docTechSlides.length; index++) {
 }
 
 for (let index = 0; index < docEduSlides.length; index++) {
-    eduSlides.push(new AnimatedSlide(new SlideBase(docEduSlides[index])));
+    let docSlideElement = docEduSlides[index];
+    let slide;
+
+    if (docSlideElement.getElementsByClassName('show').length > 0) {
+        slide = new CollapsedSlide(
+            new AnimatedSlide(
+                new SlideBase(docSlideElement)),
+            new ShowMore(
+                docSlideElement.getElementsByClassName('slide-body')[0],
+                docSlideElement.getElementsByClassName('more')[0], 
+                docSlideElement.getElementsByClassName('show')[0]));
+    }
+    else {
+        slide = new AnimatedSlide(new SlideBase(docSlideElement));
+    }
+
+    eduSlides.push(slide);
     eduDots.push(new Dot(docEduDots[index]))
 }
 

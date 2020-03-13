@@ -244,7 +244,7 @@ function ratingData($driver, $sectionNumber)
                             <li>
                                 <span class="title">ПК 1.3.</span> Выполнять разработку спецификаций отдельных компонент.
                             </li>
-                            <span id="show-1" class="show" onclick="showMore('show-1', 'more-1', 'slide-1')">
+                            <span id="show-1" class="show">
                                 Показать еще
                             </span>
                             <span id="more-1" class="more hide">
@@ -308,7 +308,7 @@ function ratingData($driver, $sectionNumber)
                             <li>
                                 <span class="title">ПК 3.3.</span> Осуществлять разработку тестовых наборов и тестовых сценариев.
                             </li>
-                            <span id="show-2" class="show" onclick="showMore('show-2', 'more-2', 'slide-2')">Показать еще</span>
+                            <span id="show-2" class="show">Показать еще</span>
                             <span id="more-2" class="more hide">
                                 <li>
                                     <span class="title">ПК 3.4.</span> Выполнять отладку программного продукта с использованием специализированных

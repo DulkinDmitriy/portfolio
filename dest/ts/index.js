@@ -35,6 +35,23 @@ var AnimatedSlide = /** @class */ (function () {
     };
     return AnimatedSlide;
 }());
+var CollapsedSlide = /** @class */ (function () {
+    function CollapsedSlide(element, showMoreButton) {
+        this.elem = element;
+        this.showMoreButton = showMoreButton;
+    }
+    CollapsedSlide.prototype.element = function () {
+        return this.elem.element();
+    };
+    CollapsedSlide.prototype.show = function () {
+        this.elem.show();
+    };
+    CollapsedSlide.prototype.hide = function () {
+        this.showMoreButton.hideContent();
+        this.elem.hide();
+    };
+    return CollapsedSlide;
+}());
 var SlideshowPanelBase = /** @class */ (function () {
     function SlideshowPanelBase(slides, dots) {
         this.slides = slides;
@@ -54,11 +71,12 @@ var SlideshowPanelBase = /** @class */ (function () {
         }
         this.slides[this.current].hide();
         this.dots[this.current].deactivate();
+        var start = Date.now();
         setTimeout(function () {
             _this.slides[target].show();
             _this.dots[target].activate();
             _this.current = target;
-        }, 301);
+        }, 300);
     };
     SlideshowPanelBase.prototype.nextSlide = function () {
         this.showSlide(this.current + 1);
@@ -80,6 +98,28 @@ var Dot = /** @class */ (function () {
     };
     return Dot;
 }());
+var ShowMore = /** @class */ (function () {
+    function ShowMore(container, content, button) {
+        var _this = this;
+        this.container = container;
+        this.content = content;
+        this.button = button;
+        this.button.onclick = function () {
+            _this.showContent();
+        };
+    }
+    ShowMore.prototype.showContent = function () {
+        this.button.classList.add('hide');
+        this.container.classList.add('expand');
+        this.content.classList.remove('hide');
+    };
+    ShowMore.prototype.hideContent = function () {
+        this.content.classList.add('hide');
+        this.container.classList.remove('expand');
+        this.button.classList.remove('hide');
+    };
+    return ShowMore;
+}());
 var docTechSlides = document.getElementsByClassName('slider tech')[0].getElementsByClassName('slide');
 var docTechDots = document.getElementsByClassName('dots tech')[0].getElementsByClassName('dot');
 var docEduSlides = document.getElementsByClassName('slider edu')[0].getElementsByClassName('slide');
@@ -93,7 +133,15 @@ for (var index = 0; index < docTechSlides.length; index++) {
     techDots.push(new Dot(docTechDots[index]));
 }
 for (var index = 0; index < docEduSlides.length; index++) {
-    eduSlides.push(new AnimatedSlide(new SlideBase(docEduSlides[index])));
+    var docSlideElement = docEduSlides[index];
+    var slide = void 0;
+    if (docSlideElement.getElementsByClassName('show').length > 0) {
+        slide = new CollapsedSlide(new AnimatedSlide(new SlideBase(docSlideElement)), new ShowMore(docSlideElement.getElementsByClassName('slide-body')[0], docSlideElement.getElementsByClassName('more')[0], docSlideElement.getElementsByClassName('show')[0]));
+    }
+    else {
+        slide = new AnimatedSlide(new SlideBase(docSlideElement));
+    }
+    eduSlides.push(slide);
     eduDots.push(new Dot(docEduDots[index]));
 }
 var techSlider = new SlideshowPanelBase(techSlides, techDots);
