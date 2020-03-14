@@ -427,7 +427,7 @@ function ratingData($driver, $sectionNumber)
                         или вы решили сотрудничать со мной, то можете
                         воспользоваться формой обратной связи или через соц-сети.
                     </p>
-                    <form method="POST" action="php/send.php">
+                    <form method="POST" action="./php/send.php">
                         <div class="form-group">
                             <input class="form-control" type="text" name="name" placeholder="Ваше имя" required>
                             <input class="form-control" type="email" name="email" placeholder="Электронная почта" required>
