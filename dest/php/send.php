@@ -30,7 +30,7 @@ try {
     $mail->send();
     
     $redirect = new Redirect();
-    $redirectURL = $redirect->act("index.php");
+    $redirectURL = $redirect->act("/index.php");
 } catch (Throwable $tr) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
