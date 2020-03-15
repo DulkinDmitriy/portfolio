@@ -31,12 +31,6 @@ try {
     
     $redirect = new Redirect();
     $redirectURL = $redirect->act("index.php");
-
-    if (headers_sent()) {
-        echo ("<script>location.href='{$redirectURL}'</script>");
-    } else {
-        header("Location: {$redirectURL}");
-    }
 } catch (Throwable $tr) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
