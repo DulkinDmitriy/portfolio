@@ -3,10 +3,11 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require_once __DIR__ . '/../vendor/autoload.php';
-require_once __DIR__ . '/../vendor/phpmailer/phpmailer/src/PHPMailer.php';
-require_once __DIR__ . '/../vendor/phpmailer/phpmailer/src/Exception.php';
-require_once __DIR__ . '/../vendor/phpmailer/phpmailer/src/SMTP.php';
+require_once __DIR__ . '/redirect.php';
+require_once __DIR__ . '/../../vendor/autoload.php';
+require_once __DIR__ . '/../../vendor/phpmailer/phpmailer/src/PHPMailer.php';
+require_once __DIR__ . '/../../vendor/phpmailer/phpmailer/src/Exception.php';
+require_once __DIR__ . '/../../vendor/phpmailer/phpmailer/src/SMTP.php';
 
 try {
     $mail = new PHPMailer(true);
@@ -27,13 +28,13 @@ try {
     $mail->Body = $_POST['message'] . "\nEmail пользователя: " . $_POST['email'] . "\nДанное сообщение было отправленно с dulyanich.herokuapp.com";
 
     $mail->send();
-    
-    $redirectURL = 'index.php';
+
+    $redirect = new Redirect();
 
     if (headers_sent()) {
-        echo ("<script>location.href='$redirectURL'</script>");
+        echo ("<script>location.href='{$redirect->act('index.php')}'</script>");
     } else {
-        header("Location: $redirectURL");
+        header("Location: $redirect->act('index.php')");
     }
 } catch (Throwable $tr) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
