@@ -32,7 +32,7 @@ try {
     $redirect = new Redirect();
 
     if (headers_sent()) {
-        echo ("<script>location.href='{$redirect->act('index.php')}'</script>");
+        echo ("<script>location.href='{$redirect->act("index.php")}'</script>");
     } else {
         header("Location: $redirect->act('index.php')");
     }
