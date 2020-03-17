@@ -30,11 +30,10 @@ function buildStyleSheets(gulpSrc) {
     return gulpSrc
         .pipe(gcmq())
         .pipe(sourcemaps.init())
+        .pipe(cleanCSS())
         .pipe(autoprefixer({
-            browsers: ['> 0.1%'],
             cascade: false
         }))
-        .pipe(cleanCSS())
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(config.dest))
         .pipe(browserSync.reload({
