@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const path = require('path');
 const scss = require('gulp-sass');
 const ts = require('gulp-typescript');
+const uglify = require('gulp-uglify');
 const cleanCSS = require('gulp-clean-css');
 const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
@@ -84,6 +85,7 @@ gulp.task('compile-ts', () => {
             base: config.src
         })
         .pipe(tsProject())
+        .pipe(uglify())
         .pipe(gulp.dest(config.dest))
         .pipe(browserSync.reload({
             stream: true
