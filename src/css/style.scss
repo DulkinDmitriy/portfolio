@@ -504,6 +504,8 @@ section.education {
             }
 
             .slide-body {
+                display: flex;
+                flex-direction: column;
                 height: 17rem;
                 border-radius: 4px;
                 background-color: #fff;
@@ -517,7 +519,7 @@ section.education {
                 ul {
                     display: flex;
                     flex-direction: column;
-                    height: 95%;
+                    height: 100%;
                     padding: .5rem .5rem 0 .5rem;
 
                     span.show {
@@ -525,7 +527,6 @@ section.education {
                         cursor: pointer;
                         align-self: center;
                         margin-top: auto;
-                        padding: .4rem;
                         color: $main-color;
                         font-size: 1.2rem;
                     }
