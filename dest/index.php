@@ -9,7 +9,7 @@ function sections($driver)
                         JOIN discipline as d ON s.id = d.section_id
                         GROUP BY s.section, s.number, s.section_index
                         ORDER BY s.number ASC";
-    
+
         return $driver->execute($sql);
     } catch (\Throwable $th) {
         echo $th;
@@ -24,7 +24,7 @@ function ratingData($driver, $sectionNumber)
                 JOIN rating as r ON d.rating_id = r.id
                 JOIN section as s ON d.section_id = s.id WHERE d.section_id = $sectionNumber
                 ORDER BY i.index, d.index_number ASC";
-    
+
         return $driver->execute($sql);
     } catch (\Throwable $th) {
         echo $th;
@@ -283,9 +283,12 @@ function ratingData($driver, $sectionNumber)
                             <li>
                                 <span class="title">ПК 2.3.</span> Реализовывать методы и технологии защиты информации в базах данных.
                             </li>
-                            <li>
-                                <span class="title">ПК 2.4.</span> Реализовывать базу данных в конкретной системе управления базами данных.
-                            </li>
+                            <span class="show">Показать еще</span>
+                            <span class="more hide">
+                                <li>
+                                    <span class="title">ПК 2.4.</span> Реализовывать базу данных в конкретной системе управления базами данных.
+                                </li>
+                            </span>
                         </ul>
                     </div>
                 </div>
@@ -437,7 +440,7 @@ function ratingData($driver, $sectionNumber)
                         </div>
                         <textarea class="form-control" name="message" cols="30" rows="10" placeholder="Сообщение" required></textarea>
                         <div class="g-recaptcha" data-sitekey="6LePSuAUAAAAAHY-sa1lXwiQMyDGMAFjdbzzhHsN"></div>
-                        <br/>
+                        <br />
                         <input class="btn" type="submit" value="Отправить">
                     </form>
                 </div>
