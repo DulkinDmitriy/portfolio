@@ -1018,6 +1018,8 @@ footer {
         }
 
         .dots {
+            margin-bottom: 1rem;
+
             .dot {
 
                 &:hover,
@@ -1060,6 +1062,7 @@ footer {
 
             .project {
                 flex-basis: initial;
+                max-width: initial;
                 width: 85%;
 
                 &:nth-child(odd) {
