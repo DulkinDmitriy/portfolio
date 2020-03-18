@@ -367,11 +367,11 @@ section.resume {
 
             .links {
                 display: flex;
-            
+
                 a {
                     display: inline-flex;
                     text-decoration: none;
-                    
+
                     &:not(:last-child) {
                         margin-right: 1rem;
                     }
@@ -965,6 +965,7 @@ footer {
                         font-size: .8rem;
                     }
                 }
+
             }
 
             .prev {
@@ -1005,6 +1006,14 @@ footer {
                     font-size: .9rem;
                     height: 15rem;
                 }
+            }
+
+            .prev {
+                left: 0;
+            }
+
+            .next {
+                right: 0;
             }
         }
 
@@ -1149,7 +1158,7 @@ footer {
     .hide-md {
         display: none;
     }
-    
+
     .slider {
         $arrow-offset: 2%;
 
@@ -1291,7 +1300,9 @@ footer {
 
         table {
             tr {
-                th, td {
+
+                th,
+                td {
                     padding: .2rem;
                     font-size: .8rem;
                 }
