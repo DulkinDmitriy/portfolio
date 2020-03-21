@@ -8,5 +8,8 @@
         "VK": "https://vk.com/dim.dulckin",
         "Telegram": "Batya_Dulyanich",
         "GitHub": "AmazingSuka"
+    },
+    "Docs": {
+        "Таблица успеваемости": "EducationPlan.xlsx"
     }
 }
