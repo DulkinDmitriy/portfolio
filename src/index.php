@@ -452,7 +452,7 @@ function ratingData($driver, $sectionNumber)
                     </header>
                     <div id="slide-2" class="slide-body">
                         <h3>Профессиональные компетенции</h3>
-                        <ul>
+                        <ul> 
                             <li>
                                 <span class="title">ПК 3.1.</span>
                                 Разрабатывать технологическую документацию.
