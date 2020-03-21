@@ -642,13 +642,13 @@ section.projects {
     .content {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
 
         .project {
             transition-duration: .2s;
             box-shadow: 0 0 10px rgba(0, 0, 0, .2);
             border-radius: 4px;
-            flex-basis: 47%;
+            flex-basis: 40%;
 
             .project-image {
                 margin: 0 auto;
