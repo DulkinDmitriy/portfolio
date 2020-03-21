@@ -98,7 +98,7 @@ function ratingData($driver, $sectionNumber)
                         web-разработчик.
                     </h1>
                 </header>
-                <p>Front-end / Back-end</p>
+                <p>Front-end / Back-end разработка</p>
                 <a class="btn" href="#contacts">Связаться</a>
             </div>
             <div class="letter scalable">
@@ -156,7 +156,24 @@ function ratingData($driver, $sectionNumber)
             <div class="slider tech">
                 <div class="slide fade">
                     <div class="slide-image scalable">
-                        <img class="sc-sm-inc" src="img/project-2.png" alt="">
+                        <img class="sc-sm-inc" src="img/net-core.png" alt="">
+                    </div>
+                    <div class="slide-body">
+                        <header>
+                            <h2>
+                                .NET Core
+                            </h2>
+                        </header>
+                        <p>
+                            .NET Core — это модульная платформа для разработки программного
+                            обеспечения с открытым исходным кодом. Совместима с такими
+                            операционными системами как Windows, Linux и macOS.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide hide fade">
+                    <div class="slide-image scalable">
+                        <img class="sc-sm-inc" src="img/ef-core.png" alt="">
                     </div>
                     <div class="slide-body">
                         <header>
@@ -165,9 +182,93 @@ function ratingData($driver, $sectionNumber)
                             </h2>
                         </header>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.
-                            Duis vulputate commodo lectus.
+                            Entity Framework (EF) Core — это кроссплатформенная
+                            и расширяемая версия популярной технологии доступа к данным
+                            Entity Framework с открытым исходным кодом.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide hide fade">
+                    <div class="slide-image scalable">
+                        <img class="sc-sm-inc" src="img/asp-net.png" alt="">
+                    </div>
+                    <div class="slide-body">
+                        <header>
+                            <h2>
+                                ASP.NET Core
+                            </h2>
+                        </header>
+                        <p>
+                            ASP.NET Core — свободно-распространяемый кросс-платформенный
+                            фреймворк для создания веб-приложений с открытым исходным кодом.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide hide fade">
+                    <div class="slide-image scalable">
+                        <img class="sc-sm-inc" src="img/mssql.png" alt="">
+                    </div>
+                    <div class="slide-body">
+                        <header>
+                            <h2>
+                                Microsoft SQL Server
+                            </h2>
+                        </header>
+                        <p>
+                            Microsoft SQL Server — система управления реляционными базами данных,
+                            разработанная корпорацией Microsoft. Основной используемый язык
+                            запросов — Transact-SQL, создан совместно Microsoft и Sybase.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide hide fade">
+                    <div class="slide-image scalable">
+                        <img class="sc-sm-inc" src="img/postgresql.png" alt="">
+                    </div>
+                    <div class="slide-body">
+                        <header>
+                            <h2>
+                                PostgreSQL
+                            </h2>
+                        </header>
+                        <p>
+                            PostgreSQL — свободная объектно-реляционная система управления базами данных.
+                            Существует в реализациях для множества UNIX-подобных платформ,
+                            включая AIX, различные BSD-системы, HP-UX, IRIX, Linux, macOS,
+                            Solaris/OpenSolaris, Tru64, QNX, а также для Microsoft Windows.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide hide fade">
+                    <div class="slide-image scalable">
+                        <img class="sc-sm-inc" src="img/python.png" alt="">
+                    </div>
+                    <div class="slide-body">
+                        <header>
+                            <h2>
+                                Python
+                            </h2>
+                        </header>
+                        <p>
+                            Python — высокоуровневый язык программирования общего назначения,
+                            ориентированный на повышение производительности
+                            разработчика и читаемости кода.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide hide fade">
+                    <div class="slide-image scalable">
+                        <img class="sc-sm-inc" src="img/elixir.png" alt="">
+                    </div>
+                    <div class="slide-body">
+                        <header>
+                            <h2>
+                                Elixir
+                            </h2>
+                        </header>
+                        <p>
+                            Elixir — функциональный, распределённый язык программирования
+                            общего назначения, который работает на виртуальной машине Erlang.
                         </p>
                     </div>
                 </div>
@@ -182,26 +283,58 @@ function ratingData($driver, $sectionNumber)
                             </h2>
                         </header>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.
-                            Duis vulputate commodo lectus.
+                            Phoenix - это фреймворк для веб-разработки,
+                            написанный на языке функционального программирования Elixir.
+                            Phoenix использует шаблон MVC на стороне сервера.
                         </p>
                     </div>
                 </div>
                 <div class="slide hide fade">
                     <div class="slide-image scalable">
-                        <img class="sc-sm-inc" src="img/project-2.png" alt="">
+                        <img class="sc-sm-inc" src="img/html.png" alt="">
                     </div>
                     <div class="slide-body">
                         <header>
                             <h2>
-                                HTML
+                                HTML5
                             </h2>
                         </header>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.
-                            Duis vulputate commodo lectus.
+                            HTML5 — язык для структурирования и представления
+                            содержимого всемирной паутины.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide hide fade">
+                    <div class="slide-image scalable">
+                        <img class="sc-sm-inc" src="img/css3.png" alt="">
+                    </div>
+                    <div class="slide-body">
+                        <header>
+                            <h2>
+                                CSS3
+                            </h2>
+                        </header>
+                        <p>
+                            CSS — формальный язык описания внешнего вида документа,
+                            написанного с использованием языка разметки.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide hide fade">
+                    <div class="slide-image scalable">
+                        <img class="sc-sm-inc" src="img/js.png" alt="">
+                    </div>
+                    <div class="slide-body">
+                        <header>
+                            <h2>
+                                JavaScript
+                            </h2>
+                        </header>
+                        <p>
+                            JavaScript — мультипарадигменный язык программирования.
+                            Поддерживает объектно-ориентированный, императивный и функциональный стили.
+                            Является реализацией языка ECMAScript.
                         </p>
                     </div>
                 </div>
@@ -212,6 +345,14 @@ function ratingData($driver, $sectionNumber)
                 <span class="dot active" onclick="techSlider.showSlide(0)"></span>
                 <span class="dot" onclick="techSlider.showSlide(1)"></span>
                 <span class="dot" onclick="techSlider.showSlide(2)"></span>
+                <span class="dot" onclick="techSlider.showSlide(3)"></span>
+                <span class="dot" onclick="techSlider.showSlide(4)"></span>
+                <span class="dot" onclick="techSlider.showSlide(5)"></span>
+                <span class="dot" onclick="techSlider.showSlide(6)"></span>
+                <span class="dot" onclick="techSlider.showSlide(7)"></span>
+                <span class="dot" onclick="techSlider.showSlide(8)"></span>
+                <span class="dot" onclick="techSlider.showSlide(9)"></span>
+                <span class="dot" onclick="techSlider.showSlide(10)"></span>
             </div>
         </section>
         <hr>
@@ -236,28 +377,34 @@ function ratingData($driver, $sectionNumber)
                         <h3>Профессиональные компетенции</h3>
                         <ul>
                             <li>
-                                <span class="title">ПК 1.1.</span> Выполнять тестирование программных модулей.
+                                <span class="title">ПК 1.1.</span>
+                                Выполнять тестирование программных модулей.
                             </li>
                             <li>
-                                <span class="title">ПК 1.2.</span> Осуществлять оптимизацию программного кода модуля.
+                                <span class="title">ПК 1.2.</span>
+                                Осуществлять оптимизацию программного кода модуля.
                             </li>
                             <li>
-                                <span class="title">ПК 1.3.</span> Выполнять разработку спецификаций отдельных компонент.
+                                <span class="title">ПК 1.3.</span>
+                                Выполнять разработку спецификаций отдельных компонент.
                             </li>
                             <span id="show-1" class="show">
                                 Показать еще
                             </span>
                             <span id="more-1" class="more hide">
                                 <li>
-                                    <span class="title">ПК 1.4.</span> Выполнять отладку программных модулей с использованием специализированных
+                                    <span class="title">ПК 1.4.</span>
+                                    Выполнять отладку программных модулей с использованием специализированных
                                     программных средств.
                                 </li>
                                 <li>
-                                    <span class="title">ПК 1.5.</span> Осуществлять разработку кода программного продукта на основе готовых
+                                    <span class="title">ПК 1.5.</span>
+                                    Осуществлять разработку кода программного продукта на основе готовых
                                     спецификаций на уровне модуля.
                                 </li>
                                 <li>
-                                    <span class="title">ПК 1.6.</span> Разрабатывать компоненты проектной и технической документации с
+                                    <span class="title">ПК 1.6.</span>
+                                    Разрабатывать компоненты проектной и технической документации с
                                     использованием графических языков спецификаций.
                                 </li>
                             </span>
@@ -275,18 +422,22 @@ function ratingData($driver, $sectionNumber)
                         <h3>Профессиональные компетенции</h3>
                         <ul>
                             <li>
-                                <span class="title">ПК 2.1.</span> Разрабатывать объекты базы данных.
+                                <span class="title">ПК 2.1.</span>
+                                Разрабатывать объекты базы данных.
                             </li>
                             <li>
-                                <span class="title">ПК 2.2.</span> Решать вопросы администрирования базы данных.
+                                <span class="title">ПК 2.2.</span>
+                                Решать вопросы администрирования базы данных.
                             </li>
                             <li>
-                                <span class="title">ПК 2.3.</span> Реализовывать методы и технологии защиты информации в базах данных.
+                                <span class="title">ПК 2.3.</span>
+                                Реализовывать методы и технологии защиты информации в базах данных.
                             </li>
                             <span class="show">Показать еще</span>
                             <span class="more hide">
                                 <li>
-                                    <span class="title">ПК 2.4.</span> Реализовывать базу данных в конкретной системе управления базами данных.
+                                    <span class="title">ПК 2.4.</span>
+                                    Реализовывать базу данных в конкретной системе управления базами данных.
                                 </li>
                             </span>
                         </ul>
@@ -303,27 +454,109 @@ function ratingData($driver, $sectionNumber)
                         <h3>Профессиональные компетенции</h3>
                         <ul>
                             <li>
-                                <span class="title">ПК 3.1.</span> Разрабатывать технологическую документацию.
+                                <span class="title">ПК 3.1.</span>
+                                Разрабатывать технологическую документацию.
                             </li>
                             <li>
-                                <span class="title">ПК 3.2.</span> Выполнять интеграцию модулей в программную систему.
+                                <span class="title">ПК 3.2.</span>
+                                Выполнять интеграцию модулей в программную систему.
                             </li>
                             <li>
-                                <span class="title">ПК 3.3.</span> Осуществлять разработку тестовых наборов и тестовых сценариев.
+                                <span class="title">ПК 3.3.</span>
+                                Осуществлять разработку тестовых наборов и тестовых сценариев.
                             </li>
                             <span id="show-2" class="show">Показать еще</span>
                             <span id="more-2" class="more hide">
                                 <li>
-                                    <span class="title">ПК 3.4.</span> Выполнять отладку программного продукта с использованием специализированных
+                                    <span class="title">ПК 3.4.</span>
+                                    Выполнять отладку программного продукта с использованием специализированных
                                     программных средств.
                                 </li>
                                 <li>
-                                    <span class="title">ПК 3.5.</span> Производить инспектирование компонент программного продукта на предмет
+                                    <span class="title">ПК 3.5.</span>
+                                    Производить инспектирование компонент программного продукта на предмет
                                     соответствия стандартам кодирования.
                                 </li>
                                 <li>
-                                    <span class="title">ПК 3.6.</span> Анализировать проектную и техническую документацию на уровне взаимодействия
+                                    <span class="title">ПК 3.6.</span>
+                                    Анализировать проектную и техническую документацию на уровне взаимодействия
                                     компонент программного обеспечения.
+                                </li>
+                            </span>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide hide fade">
+                    <header>
+                        <span class="settings icon-lg"></span>
+                        <h2>
+                            ПМ.04 Выполнение работ по одной или нескольким профессиям рабочих, должностям служащих.
+                        </h2>
+                    </header>
+                    <div class="slide-body">
+                        <h3>Профессиональные компетенции</h3>
+                        <ul>
+                            <li>
+                                <span class="title">ПК 4.1.</span>
+                                Устанавливать и обслуживать программное обеспечение.
+                            </li>
+                            <li>
+                                <span class="title">ПК 4.2.</span>
+                                Обслуживать аппаратное обеспечение персонального компьютера.
+                            </li>
+                            <li>
+                                <span class="title">ПК 4.3.</span>
+                                Осуществлять навигацию по ресурсам, поиск, ввод и передачу данных с помощью технологий и сервисов Интернета.
+                            </li>
+                            <span class="show">Показать еще</span>
+                            <span class="more hide">
+                                <li>
+                                    <span class="title">ПК 4.4.</span>
+                                    Создавать и управлять на персональном компьютере текстовыми документами, таблицами, презентациями и публикациями.
+                                </li>
+                            </span>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide hide fade">
+                    <header>
+                        <span class="interface icon-lg"></span>
+                        <h2>
+                            ПМ.05 Разработка графических и пользовательских интерфейсов.
+                        </h2>
+                    </header>
+                    <div id="slide-2" class="slide-body">
+                        <h3>Профессиональные компетенции</h3>
+                        <ul>
+                            <li>
+                                <span class="title">ПК 5.1.</span>
+                                Производить тестирование и оптимизацию разработанного веб-приложения.
+                            </li>
+                            <li>
+                                <span class="title">ПК 5.2.</span>
+                                Размещать веб приложения в сети в соответствии с техническим заданием.
+                            </li>
+                            <li>
+                                <span class="title">ПК 5.3.</span>
+                                Разрабатывать техническое задание на веб-приложение в соответствии с требованиями заказчика.
+                            </li>
+                            <span id="show-2" class="show">Показать еще</span>
+                            <span id="more-2" class="more hide">
+                                <li>
+                                    <span class="title">ПК 5.4.</span>
+                                    Разрабатывать интерфейс пользователя и веб-приложение в соответствии с техническим заданием.
+                                </li>
+                                <li>
+                                    <span class="title">ПК 5.5.</span>
+                                    Разрабатывать дизайн-концепции веб-приложений в соответствии с корпоративным стилем заказчика.
+                                </li>
+                                <li>
+                                    <span class="title">ПК 5.6.</span>
+                                    Осуществлять разработку дизайна веб-приложения с учетом современных тенденций в области веб-разработки.
+                                </li>
+                                <li>
+                                    <span class="title">ПК 5.7.</span>
+                                    Формировать требования к дизайну веб-приложений на основе анализа предметной области и целевой аудитории.
                                 </li>
                             </span>
                         </ul>
@@ -336,6 +569,8 @@ function ratingData($driver, $sectionNumber)
                 <span class="dot active" onclick="eduSlider.showSlide(0)"></span>
                 <span class="dot" onclick="eduSlider.showSlide(1)"></span>
                 <span class="dot" onclick="eduSlider.showSlide(2)"></span>
+                <span class="dot" onclick="eduSlider.showSlide(3)"></span>
+                <span class="dot" onclick="eduSlider.showSlide(4)"></span>
             </div>
             <table>
                 <caption>Таблица успеваемости</caption>

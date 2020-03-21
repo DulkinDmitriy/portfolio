@@ -40,6 +40,14 @@
     @include span-hover('server', 'blue', 'pink');
 }
 
+.interface {
+    @include span-hover('interface', 'blue', 'pink');
+}
+
+.settings {
+    @include span-hover('settings', 'blue', 'pink');
+}
+
 .inbox {
     @include span-hover('inbox', 'blue', 'pink');
 }
