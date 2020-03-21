@@ -650,6 +650,7 @@ section.projects {
             box-shadow: 0 0 10px rgba(0, 0, 0, .2);
             border-radius: 4px;
             flex-basis: 40%;
+            min-width: 340px;
 
             .project-image {
                 margin: 0 auto;
@@ -1065,6 +1066,7 @@ footer {
             .project {
                 flex-basis: initial;
                 max-width: initial;
+                min-width: initial;
                 width: 85%;
 
                 &:nth-child(odd) {
@@ -1324,6 +1326,7 @@ footer {
                 margin: 1rem;
                 flex-grow: 1;
                 max-width: 65%;
+                min-width: 280px;
             }
         }
     }
