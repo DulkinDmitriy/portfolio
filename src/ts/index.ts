@@ -120,6 +120,62 @@ class SlideshowPanelBase implements SlideshowPanel {
     }
 }
 
+class SwipedSlideshowPanel implements SlideshowPanel {
+    private readonly slideShowPanel: SlideshowPanel;
+    private x: number;
+
+    constructor(slideShowPanel: SlideshowPanel, slider: any) {
+        this.slideShowPanel = slideShowPanel;
+
+        slider.addEventListener('touchstart',
+            (ev: any) => {
+                try {
+                    this.start(ev);
+                }
+                catch (erorr) {
+
+                }
+            }, true);
+
+        slider.addEventListener('touchend', (ev: any) => {
+            this.end(ev.changedTouches[0].screenX);
+        }, true);
+    }
+
+    showSlide(target: number): void {
+        this.slideShowPanel.showSlide(target);
+    }
+    nextSlide(): void {
+        this.slideShowPanel.nextSlide();
+    }
+    prevSlide(): void {
+        this.slideShowPanel.prevSlide();
+    }
+
+    private start(event: any) {
+        event.path.find(
+            (elem: any, index: any, array: any) => {
+                try {
+                    if (elem.classList.contains('slide')) {
+                        return this.x = event.touches[0].screenX;
+                    }
+                } catch (error) {
+
+                }
+            }
+        );
+    }
+
+    private end(x: number) {
+        if (this.x < x) {
+            this.nextSlide();
+        }
+        else if (this.x > x) {
+            this.prevSlide();
+        }
+    }
+}
+
 class Dot {
     private readonly elem: any;
 
@@ -163,9 +219,12 @@ class ShowMore {
     }
 }
 
-let docTechSlides = document.getElementsByClassName('slider tech')[0].getElementsByClassName('slide');
+let docTechSlider = document.getElementsByClassName('slider tech')[0];
+let docEduSlider = document.getElementsByClassName('slider edu')[0];
+
+let docTechSlides = docTechSlider.getElementsByClassName('slide');
 let docTechDots = document.getElementsByClassName('dots tech')[0].getElementsByClassName('dot');
-let docEduSlides = document.getElementsByClassName('slider edu')[0].getElementsByClassName('slide');
+let docEduSlides = docEduSlider.getElementsByClassName('slide');
 let docEduDots = document.getElementsByClassName('dots edu')[0].getElementsByClassName('dot');
 
 let techSlides = [];
@@ -188,7 +247,7 @@ for (let index = 0; index < docEduSlides.length; index++) {
                 new SlideBase(docSlideElement)),
             new ShowMore(
                 docSlideElement.getElementsByClassName('slide-body')[0],
-                docSlideElement.getElementsByClassName('more')[0], 
+                docSlideElement.getElementsByClassName('more')[0],
                 docSlideElement.getElementsByClassName('show')[0]));
     }
     else {
@@ -199,5 +258,5 @@ for (let index = 0; index < docEduSlides.length; index++) {
     eduDots.push(new Dot(docEduDots[index]))
 }
 
-let techSlider = new SlideshowPanelBase(techSlides, techDots);
-let eduSlider = new SlideshowPanelBase(eduSlides, eduDots);
+let techSlider = new SwipedSlideshowPanel(new SlideshowPanelBase(techSlides, techDots), docTechSlider);
+let eduSlider = new SwipedSlideshowPanel(new SlideshowPanelBase(eduSlides, eduDots), docEduSlider);
