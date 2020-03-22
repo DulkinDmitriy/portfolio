@@ -167,10 +167,10 @@ class SwipedSlideshowPanel implements SlideshowPanel {
     }
 
     private end(x: number) {
-        if (this.x < x) {
+        if (this.x > x) {
             this.nextSlide();
         }
-        else if (this.x > x) {
+        else if (this.x < x) {
             this.prevSlide();
         }
     }
