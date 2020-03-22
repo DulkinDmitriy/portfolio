@@ -182,7 +182,7 @@ function ratingData($driver, $sectionNumber)
                             </h2>
                         </header>
                         <p>
-                            Entity Framework (EF) Core — это кроссплатформенная
+                            EF Core — это кроссплатформенная
                             и расширяемая версия популярной технологии доступа к данным
                             Entity Framework с открытым исходным кодом.
                         </p>
@@ -217,7 +217,7 @@ function ratingData($driver, $sectionNumber)
                         <p>
                             Microsoft SQL Server — система управления реляционными базами данных,
                             разработанная корпорацией Microsoft. Основной используемый язык
-                            запросов — Transact-SQL, создан совместно Microsoft и Sybase.
+                            запросов — Transact-SQL.
                         </p>
                     </div>
                 </div>
@@ -233,9 +233,7 @@ function ratingData($driver, $sectionNumber)
                         </header>
                         <p>
                             PostgreSQL — свободная объектно-реляционная система управления базами данных.
-                            Существует в реализациях для множества UNIX-подобных платформ,
-                            включая AIX, различные BSD-системы, HP-UX, IRIX, Linux, macOS,
-                            Solaris/OpenSolaris, Tru64, QNX, а также для Microsoft Windows.
+                            Существует в реализациях для множества UNIX-подобных платформ, а также для Microsoft Windows.
                         </p>
                     </div>
                 </div>
@@ -250,7 +248,7 @@ function ratingData($driver, $sectionNumber)
                             </h2>
                         </header>
                         <p>
-                            Python — высокоуровневый язык программирования общего назначения,
+                            Python — высокоуровневый язык программирования,
                             ориентированный на повышение производительности
                             разработчика и читаемости кода.
                         </p>
@@ -334,7 +332,6 @@ function ratingData($driver, $sectionNumber)
                         <p>
                             JavaScript — мультипарадигменный язык программирования.
                             Поддерживает объектно-ориентированный, императивный и функциональный стили.
-                            Является реализацией языка ECMAScript.
                         </p>
                     </div>
                 </div>
@@ -452,7 +449,7 @@ function ratingData($driver, $sectionNumber)
                     </header>
                     <div id="slide-2" class="slide-body">
                         <h3>Профессиональные компетенции</h3>
-                        <ul>
+                        <ul> 
                             <li>
                                 <span class="title">ПК 3.1.</span>
                                 Разрабатывать технологическую документацию.
@@ -614,22 +611,23 @@ function ratingData($driver, $sectionNumber)
             </header>
             <div class="content">
                 <div class="project">
-                    <div class="project-image">
-                        <span class="project1"></span>
-                    </div>
-                    <div class="project-body">
-                        <header>
-                            <h2>
-                                Web-приложение по доставке еды 2Bro`s
-                            </h2>
-                        </header>
-                        <article>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.
-                            Duis vulputate commodo lectus, ac blandit elit tincidunt id.
-                            Sed rhoncus, tortor sed eleifend tristiqu
-                        </article>
-                    </div>
+                    <a href="https://boxters.herokuapp.com/">
+                        <div class="project-image">
+                            <span class="project1"></span>
+                        </div>
+                        <div class="project-body">
+                            <header>
+                                <h2>
+                                    Web-приложение по доставке еды 2Bro`s
+                                </h2>
+                            </header>
+                            <article>
+                                Современное web-приложение для компании 2Bro`s по доставке еды.
+                                Разработано на ASP.NET Core 3.0 с использованием 
+                                Entity Framework Core для PostgreSQL и MediatR. 
+                            </article>
+                        </div>
+                    </a>
                 </div>
                 <div class="project">
                     <div class="project-image">
@@ -638,14 +636,13 @@ function ratingData($driver, $sectionNumber)
                     <div class="project-body">
                         <header>
                             <h2>
-                                Web-приложение по доставке еды 2Bro`s
+                                Пользовательский чат в реальном времени.
                             </h2>
                         </header>
                         <article>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.
-                            Duis vulputate commodo lectus, ac blandit elit tincidunt id.
-                            Sed rhoncus, tortor sed eleifend tristiqu
+                            Этот проект является экземпляром чата, который обновляет историю 
+                            сообщений в реальном времени. Приложение написано на Elixir / Phoenix 
+                            с использованием каналов.
                         </article>
                     </div>
                 </div>
