@@ -129,13 +129,13 @@ function ratingData($driver, $sectionNumber)
                         Любую работу за которую берусь выполняю качественно и в назначенные сроки.
                     </p>
                     <div class="links">
-                        <a href="">
+                        <a href="https://github.com/AmazingSuka" target="_blank">
                             <span class="git-p-bl icon"></span>
                         </a>
-                        <a href="">
+                        <a href="https://vk.com/dim.dulckin" target="_blank">
                             <span class="vk-p-bl icon"></span>
                         </a>
-                        <a href="">
+                        <a href="https://t.me/Batya_Dulyanich" target="_blank">
                             <span class="tg-p-bl icon"></span>
                         </a>
                     </div>
@@ -449,7 +449,7 @@ function ratingData($driver, $sectionNumber)
                     </header>
                     <div id="slide-2" class="slide-body">
                         <h3>Профессиональные компетенции</h3>
-                        <ul> 
+                        <ul>
                             <li>
                                 <span class="title">ПК 3.1.</span>
                                 Разрабатывать технологическую документацию.
@@ -611,7 +611,7 @@ function ratingData($driver, $sectionNumber)
             </header>
             <div class="content">
                 <div class="project">
-                    <a href="https://boxters.herokuapp.com/">
+                    <a href="https://boxters.herokuapp.com/" target="_blank">
                         <div class="project-image">
                             <span class="project1"></span>
                         </div>
@@ -623,28 +623,30 @@ function ratingData($driver, $sectionNumber)
                             </header>
                             <article>
                                 Современное web-приложение для компании 2Bro`s по доставке еды.
-                                Разработано на ASP.NET Core 3.0 с использованием 
-                                Entity Framework Core для PostgreSQL и MediatR. 
+                                Разработано на ASP.NET Core 3.0 с использованием
+                                Entity Framework Core для PostgreSQL и MediatR.
                             </article>
                         </div>
                     </a>
                 </div>
                 <div class="project">
-                    <div class="project-image">
-                        <span class="project2"></span>
-                    </div>
-                    <div class="project-body">
-                        <header>
-                            <h2>
-                                Пользовательский чат в реальном времени.
-                            </h2>
-                        </header>
-                        <article>
-                            Этот проект является экземпляром чата, который обновляет историю 
-                            сообщений в реальном времени. Приложение написано на Elixir / Phoenix 
-                            с использованием каналов.
-                        </article>
-                    </div>
+                    <a href="https://chamber-chat.herokuapp.com" target="_blank">
+                        <div class="project-image">
+                            <span class="project2"></span>
+                        </div>
+                        <div class="project-body">
+                            <header>
+                                <h2>
+                                    Пользовательский чат в реальном времени.
+                                </h2>
+                            </header>
+                            <article>
+                                Этот проект является экземпляром чата, который обновляет историю
+                                сообщений в реальном времени. Приложение написано на Elixir / Phoenix
+                                с использованием каналов.
+                            </article>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -677,13 +679,13 @@ function ratingData($driver, $sectionNumber)
                     </form>
                 </div>
                 <div class="social">
-                    <a href="https://t.me/profile=Batya_Dulyanich">
+                    <a href="https://t.me/Batya_Dulyanich" target="_blank">
                         <span class="tg-b-bl icon"></span>
                         <p>@Batya_Dulyanich</p>
                     </a>
-                    <a href="https://t.me/profile=Batya_Dulyanich">
+                    <a href="https://vk.com/dim.dulckin" target="_blank">
                         <span class="vk-b-p icon"></span>
-                        <p>vk.com/dim.dulckin</p>
+                        <p>@dim.dulckin</p>
                     </a>
                     <a href="mailto:dulckin.dim@yandex.ru">
                         <span class="mail-b-bl icon"></span>
@@ -699,10 +701,10 @@ function ratingData($driver, $sectionNumber)
         <p>Dmitriy Dulkin</p>
         <p>Все права защищены</p>
         <div class="social">
-            <a href="https://vk.com/dim.dulckin">
+            <a href="https://vk.com/dim.dulckin" target="_blank">
                 <span class="vk-b-bl icon"></span>
             </a>
-            <a href="https://telegram.org/Batya_Dulyanich">
+            <a href="https://t.me/Batya_Dulyanich" target="_blank">
                 <span class="tg-b-bl icon"></span>
             </a>
         </div>
