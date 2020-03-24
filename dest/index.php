@@ -610,44 +610,41 @@ function ratingData($driver, $sectionNumber)
                 <h1>Проекты</h1>
             </header>
             <div class="content">
-                <div class="project">
-                    <a href="https://boxters.herokuapp.com/" target="_blank">
-                        <div class="project-image">
-                            <span class="project1"></span>
-                        </div>
-                        <div class="project-body">
-                            <header>
-                                <h2>
-                                    Web-приложение по доставке еды 2Bro`s
-                                </h2>
-                            </header>
-                            <article>
-                                Современное web-приложение для компании 2Bro`s по доставке еды.
-                                Разработано на ASP.NET Core 3.0 с использованием
-                                Entity Framework Core для PostgreSQL и MediatR.
-                            </article>
-                        </div>
-                    </a>
-                </div>
-                <div class="project">
-                    <a href="https://chamber-chat.herokuapp.com" target="_blank">
-                        <div class="project-image">
-                            <span class="project2"></span>
-                        </div>
-                        <div class="project-body">
-                            <header>
-                                <h2>
-                                    Пользовательский чат в реальном времени.
-                                </h2>
-                            </header>
-                            <article>
-                                Этот проект является экземпляром чата, который обновляет историю
-                                сообщений в реальном времени. Приложение написано на Elixir / Phoenix
-                                с использованием каналов.
-                            </article>
-                        </div>
-                    </a>
-                </div>
+                <a href="#" class="project" target="_blank">
+                    <div class="project-image">
+                        <span class="project1"></span>
+                    </div>
+                    <div class="project-body">
+                        <header>
+                            <h2>
+                                Web-приложение по доставке еды 2Bro`s
+                            </h2>
+                        </header>
+                        <article>
+                            Современное web-приложение для компании 2Bro`s по доставке еды.
+                            Разработано на ASP.NET Core 3.0 с использованием
+                            Entity Framework Core для PostgreSQL и MediatR.
+                            Проект находится на финальной стадии разработки и будет опубликован в ближайшее время.
+                        </article>
+                    </div>
+                </a>
+                <a href="https://chamber-chat.herokuapp.com" class="project" target="_blank">
+                    <div class="project-image">
+                        <span class="project2"></span>
+                    </div>
+                    <div class="project-body">
+                        <header>
+                            <h2>
+                                Пользовательский чат в реальном времени.
+                            </h2>
+                        </header>
+                        <article>
+                            Этот проект является экземпляром чата, который обновляет историю
+                            сообщений в реальном времени. Приложение написано на Elixir / Phoenix
+                            с использованием каналов.
+                        </article>
+                    </div>
+                </a>
             </div>
         </section>
         <hr>
