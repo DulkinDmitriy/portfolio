@@ -743,8 +743,17 @@ section.contacts {
                     width: 100%;
 
                     &:focus {
-                        border: 1px solid $semi-color-very-high;
-                        outline: 1px solid $semi-color-very-high;
+                        outline: none;
+
+                        &:invalid {
+                            border: 1px solid $main-color;
+                            box-shadow: 0 0 1px 1px $main-color;
+                        }
+
+                        &:valid {
+                            border: 1px solid $semi-color-very-high;
+                            box-shadow: 0 0 1px 1px $semi-color-very-high;
+                        }
                     }
                 }
 
