@@ -130,13 +130,13 @@ function ratingData($driver, $sectionNumber)
                         Любую работу за которую берусь выполняю качественно и в назначенные сроки.
                     </p>
                     <div class="links">
-                        <a href="https://github.com/AmazingSuka" target="_blank">
+                        <a href="https://github.com/AmazingSuka" target="_blank" name="git">
                             <span class="git-p-bl icon"></span>
                         </a>
-                        <a href="https://vk.com/dim.dulckin" target="_blank">
+                        <a href="https://vk.com/dim.dulckin" target="_blank" name="vk">
                             <span class="vk-p-bl icon"></span>
                         </a>
-                        <a href="https://t.me/Batya_Dulyanich" target="_blank">
+                        <a href="https://t.me/Batya_Dulyanich" target="_blank" name="tg">
                             <span class="tg-p-bl icon"></span>
                         </a>
                     </div>
@@ -677,15 +677,15 @@ function ratingData($driver, $sectionNumber)
                     </form>
                 </div>
                 <div class="social">
-                    <a href="https://t.me/Batya_Dulyanich" target="_blank">
+                    <a href="https://t.me/Batya_Dulyanich" target="_blank" name="tg">
                         <span class="tg-b-bl icon"></span>
                         <p>@Batya_Dulyanich</p>
                     </a>
-                    <a href="https://vk.com/dim.dulckin" target="_blank">
+                    <a href="https://vk.com/dim.dulckin" target="_blank" name="vk">
                         <span class="vk-b-p icon"></span>
                         <p>@dim.dulckin</p>
                     </a>
-                    <a href="mailto:dulckin.dim@yandex.ru">
+                    <a href="mailto:dulckin.dim@yandex.ru" name="contactMail">
                         <span class="mail-b-bl icon"></span>
                         <p>dulckin.dim@yandex.ru</p>
                     </a>
@@ -699,10 +699,10 @@ function ratingData($driver, $sectionNumber)
         <p>Dmitriy Dulkin</p>
         <p>Все права защищены</p>
         <div class="social">
-            <a href="https://vk.com/dim.dulckin" target="_blank">
+            <a href="https://vk.com/dim.dulckin" target="_blank" name="vk">
                 <span class="vk-b-bl icon"></span>
             </a>
-            <a href="https://t.me/Batya_Dulyanich" target="_blank">
+            <a href="https://t.me/Batya_Dulyanich" target="_blank" name="tg">
                 <span class="tg-b-bl icon"></span>
             </a>
         </div>
