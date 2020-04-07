@@ -611,8 +611,8 @@ function ratingData($driver, $sectionNumber)
                 <h1>Проекты</h1>
             </header>
             <div class="content">
-                <a href="#" class="project" target="_blank">
-                    <div class="project-image">
+                <a href="http://two-bros.herokuapp.com/" class="project" target="_blank">
+                    <div class="project-image scalable">
                         <span class="project1"></span>
                     </div>
                     <div class="project-body">
@@ -625,11 +625,11 @@ function ratingData($driver, $sectionNumber)
                             Современное web-приложение для компании 2Bro`s по доставке еды.
                             Разработано на ASP.NET Core 3.0 с использованием
                             Entity Framework Core для PostgreSQL и MediatR.
-                            Проект находится на финальной стадии разработки и будет опубликован в ближайшее время.
+                            Проект находится на финальной стадии разработки, поэтому может работать некорректно.
                         </article>
                     </div>
                 </a>
-                <a href="https://chamber-chat.herokuapp.com" class="project" target="_blank">
+                <a href="http://chamber-chat.herokuapp.com" class="project" target="_blank">
                     <div class="project-image">
                         <span class="project2"></span>
                     </div>

@@ -53,7 +53,8 @@
 }
 
 .project1 {
-    @include project-image('../img/project-1.png');
+    @include project-image('../img/two-bros.png');
+    height: 90%;
 }
 
 .project2 {
