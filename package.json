@@ -1,6 +1,8 @@
 {
     "name": "dulyanich",
     "version": "1.0.1",
+    "author": "AmazingSuka",
+    "license": "ISC",
     "description": "Portfolio Spa-version.",
     "private": true,
     "scripts": {
@@ -12,8 +14,6 @@
     "eslintConfig": {
         "extends": "react-app"
     },
-    "author": "AmazingSuka",
-    "license": "ISC",
     "browserslist": {
         "production": [
             ">0.2%",
